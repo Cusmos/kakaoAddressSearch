@@ -52,15 +52,6 @@
                         zonecode: data.zonecode,
                     };
                     window.postMessageToiOS(postData);
-                    
-                    // Android Bridge 추가 (test.html에서 가져온 로직)
-                    if (window.CusmeApp && window.CusmeApp.processDATA) {
-                        window.CusmeApp.processDATA(
-                            postData.roadAddress, 
-                            postData.jibunAddress, 
-                            postData.zonecode
-                        );
-                    }
                 },
                 width: "100%",
                 height: "100%",
